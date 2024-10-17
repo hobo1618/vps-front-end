@@ -23,7 +23,7 @@ RUN bun install
 RUN bun vite build
 
 # Expose the port where the app will run (typically 3000 for Vite apps)
-EXPOSE 3000
+EXPOSE 8080
 
 # Command to start the Vite app
 CMD ["bun", "vite", "preview", "--host"]
