@@ -30,7 +30,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.PAT_GITHUB }}
       # Extract Docker metadata (tags, labels) for the image
       - name: Extract Docker metadata
         id: meta
